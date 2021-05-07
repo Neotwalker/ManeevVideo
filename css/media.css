@@ -99,9 +99,6 @@
 		font-size: 12px;
 		left: 0;
 	}
-	#button-up{
-		left: 85%;
-	}
 	.s_about .personal_menu{
 		width: 100%;
 		padding: 50px 0 420px 40px;
@@ -205,7 +202,6 @@
 		padding-top: 20px;
 	}
 	#button-up{
-		left: 93%;
 		bottom: 30px;
 	}
 	.button_top{
@@ -319,7 +315,6 @@
 	.s_creature .item_creature .s_creature_wrap_1 .s_creature_wrap_flex p,
 	.s_creature .item_creature .s_creature_wrap .s_creature_wrap_3 p,
 	.s_creature .item_creature .s_creature_wrap_last .s_creature_wrap_3 p{
-		
 		font-size: 12px;
 	}
 	.s_creature .item_creature .s_creature_wrap svg,
