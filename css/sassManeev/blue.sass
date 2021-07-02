@@ -1,31 +1,45 @@
 @import "../bourbon/bourbon"
 
-$color: #FF6347 //Theme skin
-$text_color: #888
+$color: #337AB7
+$text_color: #fff
 $main_color: #222
 $bg_light: #FAFAFA
+$menu_color: #3EEDFF
+$menu_color_grad: #2cb4c2
+$list: $menu_color, $menu_color_grad
+
+@mixin gradient($direction, $list)
+	background: -webkit-linear-gradient($direction, $list)
 
 @mixin kerning($kerning)
 	letter-spacing: $kerning + px
 
-body
+body, h2
 	color: $main_color
 
-a
-	color: $color
-
-p,
-body .main_footer,
-.s_about li
+a, .btn
 	color: $text_color
+
+.s_about a, .s_portfolio a, .s_resume a
+	color: $text_color
+
+#button-up
+	background-color: $color
+	&:hover
+		background-color: #4830F0
+		box-shadow: 0 0 8px 8px #acacac
+	i
+		color: $text_color
 
 .color_element
 	color: $color
+.color_element1
+	color: $main_color
 .color_bg
 	background-color: $color
 .color_border
 	border-color: $color
-
+.calc-form button
 .bg_light
 	background-color: $bg_light
 .bg_dark
@@ -38,15 +52,10 @@ body .main_footer,
 
 .top_mnu
 	a:hover
-		color: $color
+		color: $text_color
 
 	a
 		+kerning(4)
-
-.top_text
-	p
-		color: $bg_light
-		+kerning(5)
 
 .personal_header
 	+kerning(2)
@@ -59,11 +68,13 @@ body .main_footer,
 section
 	h3
 		+kerning(3)
-		color: $text_color
+		color: $color
 
 .s_about
 	p:nth-child(even)
-		color: $color
+		color: $main_color
+	.personal_menu
+		@include gradient(left, $list)
 
 .resume_container
 	h3
@@ -93,7 +104,10 @@ section
 		color: $color
 
 .main_footer a
-	color: $color
+	color: $text_color
+	i:hover
+		color: blue
+		transition: 0.5s
 
 .contacts_icon
 	color: $color
@@ -114,6 +128,9 @@ form
 	.form-group
 		+kerning(2)
 		color: $text_color
+
+.button_top
+	background-color: $color
 
 .popup_content
 	+kerning(1)
