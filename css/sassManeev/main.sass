@@ -20,7 +20,7 @@ body textarea:required:valid
 
 .hidden
 	display: none
-	
+
 #button-up
 	display: none
 	right: 20px
@@ -33,7 +33,7 @@ body textarea:required:valid
 	bottom: 50px
 	outline: none
 	text-decoration: none
-	padding: 5px		
+	padding: 5px
 	box-shadow: 0 0 4px 4px #bebebe
 	cursor: pointer
 	transition: .8s
@@ -157,11 +157,10 @@ svg
 	span
 		display: block
 
-
 $w: 28px
 $h: 3px
 
-.sandwich 
+.sandwich
 	width: $w
 	height: $w
 	position: absolute
@@ -175,16 +174,15 @@ $h: 3px
 .sw-topper
 	position: relative
 	top: 0
-	width: $w 
+	width: $w
 	height: $h
 	background: rgb(255, 255, 255)
 	border: none
 	border-radius: 4px 4px 4px 4px
 	transition: transform 0.5s, top 0.2s
 	display: block
-			
-	//transition-delay: 0.2s, 0s
 
+	//transition-delay: 0.2s, 0s
 
 svg
 	path
@@ -333,9 +331,9 @@ svg
 		color: #4830F0
 		margin-top: -50px
 		line-height: 20px
-		height: 100px	
+		height: 100px
 		text-shadow: 0 65px 0 #fff, 1px 65px 65px #fff
-		background: #4830F0	
+		background: #4830F0
 
 .main_footer
 	padding: 50px 0
@@ -364,7 +362,7 @@ svg
 		z-index: 2
 	.block
 		display: none
-	.block.active 
+	.block.active
 		display: block
 		padding: 0 80px
 		z-index: 1
@@ -409,13 +407,13 @@ svg
 		padding-top: 35px
 
 /*.s_about, .s_resume
-	position: relative
-	animation-fill-mode: forwards
-	background-image: linear-gradient(38deg, #fff, #fff 31%, #b9f8ff 31%, #0fced5 100%, #fff 30%, #fff)
-	background-repeat: no-repeat
-	background-size: 100%
-	background-position: center
-	background-attachment: fixed*/
+ position: relative
+ animation-fill-mode: forwards
+ background-image: linear-gradient(38deg, #fff, #fff 31%, #b9f8ff 31%, #0fced5 100%, #fff 30%, #fff)
+ background-repeat: no-repeat
+ background-size: 100%
+ background-position: center
+ background-attachment: fixed*/
 
 .s_resume
 	.section_content
@@ -481,7 +479,7 @@ svg
 			color: black
 			opacity: .5
 
-.owl-next 
+.owl-next
 	margin-left: 20px
 
 .s_about_us
@@ -522,9 +520,8 @@ svg
 				border-radius: 10px
 				margin-left: 5px
 			.owl-dot.active
-				background: #4830F0 
+				background: #4830F0
 				color: #000
-
 
 .s_sell
 	.wrap
@@ -682,11 +679,8 @@ svg
 			width: 190%
 			margin-left: 30%
 
-
-
 .s_contacts
 	padding: 20px
-
 
 .main_form
 	button
@@ -708,7 +702,7 @@ svg
 		&:hover
 			color: #4830F0
 			margin-top: -50px
-			height: 100px	
+			height: 100px
 			text-shadow: 0 25px 0 #fff, 1px 25px 65px #fff
 			background: #4830F0
 
@@ -779,7 +773,7 @@ svg
 		margin: 0
 		padding: 0
 
-	display: flex
+		display: flex
 
 .range-ticks, .label-range
 	display: flex
@@ -944,22 +938,22 @@ $checkbox-background-checked: yellow
 					transform: scale(0)
 					transition: transform 200ms ease-out
 		input[type="checkbox"]
-			+ label
-				&:after
-					background-color: transparent
-					content: ""
-					display: block
-					position: absolute
-					left: 0.65rem
-					top: 0.25rem
-					width: 0.5rem
-					height: 1rem
-					opacity: 0.2
-					border-bottom: 3px solid $checkbox-checked
-					border-right: 3px solid $checkbox-checked
-					transform: rotate(45deg)
-					transition: border-color 0.3s ease
-			&:checked 
+		+ label
+			&:after
+				background-color: transparent
+				content: ""
+				display: block
+				position: absolute
+				left: 0.65rem
+				top: 0.25rem
+				width: 0.5rem
+				height: 1rem
+				opacity: 0.2
+				border-bottom: 3px solid $checkbox-checked
+				border-right: 3px solid $checkbox-checked
+				transform: rotate(45deg)
+				transition: border-color 0.3s ease
+			&:checked
 				+ label
 					color: #337AB7
 					&:before
@@ -969,10 +963,10 @@ $checkbox-background-checked: yellow
 						opacity: 1
 
 		input[type="radio"]
-			+ label
-				&:before,
-				&:after
-					border-radius: 50%
+		+ label
+			&:before,
+			&:after
+				border-radius: 50%
 				&:after
 					left: 0.35rem
 					top: 0.35rem
@@ -981,7 +975,7 @@ $checkbox-background-checked: yellow
 			&:checked
 				+ label
 					color: #337AB7
-					&:before 
+					&:before
 						//background: $checkbox-background-checked
 						animation: borderscale 300ms ease-in
 					&:after
@@ -992,9 +986,6 @@ $checkbox-background-checked: yellow
 				position: relative
 				display: inline-block
 				margin: 10px 0
-
-
-
 
 .main_color_bg
 	position: relative
