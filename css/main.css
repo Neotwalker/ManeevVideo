@@ -361,15 +361,18 @@ svg path {
 
 .top_mnu ul .social_wrap {
   margin-top: 0;
-}
-
-.top_mnu ul .social_wrap li {
   padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .top_mnu ul .social_wrap a {
   height: 20px;
-  width: 20px;
+  padding: 0 20px;
 }
 
 .top_mnu ul .social_wrap a span {
@@ -450,6 +453,29 @@ svg path {
 .button_top:hover {
   text-shadow: 0 65px 0 #fff, 1px 65px 65px #fff;
   background: #4830F0;
+}
+
+.mymodal {
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+  display: none;
+  max-width: 100%;
+  padding: 20px;
+  width: 750px;
+}
+
+.mymodal .form-control {
+  margin-bottom: 15px;
+}
+
+.mymodal label {
+  font-weight: normal;
+}
+
+.mymodal.min {
+  max-width: 100%;
+  width: 400px;
 }
 
 .main_footer {
@@ -637,6 +663,8 @@ svg path {
   padding: 5px 5px;
   height: 120px;
   display: inline-block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .owl-carousel .owl-nav {
